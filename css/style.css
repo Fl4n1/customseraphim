@@ -89,9 +89,16 @@ header {
     margin-bottom: 40px;
 }
 
+.vibor_clothes_block {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .vibor_clothes {
-    width: 600px;
-    height: 600px;
+    width: 625px;
+    height: 625px;
+    margin: 0 10px
 }
 
 .img_tovar img {
@@ -115,8 +122,8 @@ header {
         margin-left: 3rem;
     }
     .vibor_clothes {
-        height: 400px;
-        width: 400px;
+        height: 39vh;
+        width: 39vh;
     }
 }
 
@@ -136,8 +143,30 @@ header {
         position: relative;
         margin-left: 3rem;
     }
+    .vibor_clothes_block {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .stop_transform_block {
+        justify-content: center;
+    }
     .vibor_clothes {
-        height: 150px;
-        width: 150px;
+        height: 30%;
+        width: 80%;
+    }
+    .vibor_clothes:last-child {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:415px) {
+    .vibor_clothes_block {
+        justify-content: center;
+    }
+    .vibor_clothes {
+        height: 190px;
+        width: 190px;
     }
 }
