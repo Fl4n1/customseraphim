@@ -12,6 +12,10 @@
     font-weight: normal;
 }
 
+body {
+    background-color: #f7f7f7;
+}
+
 header {
     background-color: rgb(136, 136, 136);
     padding: 5px;
@@ -40,6 +44,11 @@ header {
     right: 0;
 }
 
+.no_a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
 .bgBanner {
     background: url("../images/bgSeraphim.webp") no-repeat;
     height: 62vh;
@@ -64,6 +73,7 @@ header {
 .midari {
     height: 50vh;
     width: 50vh;
+    filter: brightness(1.1);
 }
 
 .paints {
@@ -96,9 +106,15 @@ header {
 }
 
 .vibor_clothes {
-    width: 625px;
-    height: 625px;
-    margin: 0 10px
+    /* width: 625px;
+    height: 625px; */
+    margin: 10px;
+    transition: 0.5s ease-out;
+    filter: brightness(0.95);
+}
+
+.vibor_clothes:hover {
+    filter: brightness(0.6);
 }
 
 .img_tovar img {
@@ -121,10 +137,10 @@ header {
         position: relative;
         margin-left: 3rem;
     }
-    .vibor_clothes {
+    /* .vibor_clothes {
         height: 39vh;
         width: 39vh;
-    }
+    } */
 }
 
 @media(max-width:576px) {
@@ -152,16 +168,17 @@ header {
     .stop_transform_block {
         justify-content: center;
     }
-    .vibor_clothes {
+    /* .vibor_clothes {
         height: 30%;
         width: 80%;
-    }
+    } */
     .vibor_clothes:last-child {
         margin-top: 20px;
     }
 }
 
-@media(max-width:415px) {
+
+/* @media(max-width:415px) {
     .vibor_clothes_block {
         justify-content: center;
     }
@@ -169,4 +186,4 @@ header {
         height: 190px;
         width: 190px;
     }
-}
+} */
